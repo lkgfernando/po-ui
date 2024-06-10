@@ -1,0 +1,67 @@
+<div class="po-wrapper">
+  <po-toolbar [p-title]="title"></po-toolbar>
+
+  <po-menu 
+    [p-menus]="menus" 
+    [p-collapsed]="true">
+  </po-menu>
+
+  <po-page-dynamic-search 
+    [p-title]="title" 
+    p-subtitle="Aplicação da Turma 004 de PO-UI" 
+    [p-actions]="pageActions">
+    <div class="po-row">
+      <po-button 
+        p-label="PO Button" 
+        (p-click)="onButtonClick()" 
+        p-danger="true" 
+        p-icon="po-icon-delete" 
+        p-kind="primary">
+      </po-button>
+
+      <po-button 
+        p-label="PO Button" 
+        (p-click)="onButtonClick()" 
+        p-danger="true" 
+        p-icon="po-icon-delete" 
+        p-kind="secondary">
+      </po-button>
+
+      <po-button 
+        p-label="PO Button" 
+        (p-click)="onButtonClick()" 
+        p-danger="true" 
+        p-icon="po-icon-delete"
+        p-kind="tertiary">
+      </po-button>
+    </div>
+
+    <div class="po-row">
+      <po-button 
+        p-label="PO Button" 
+        (p-click)="onButtonClick()" 
+        p-icon="po-icon-delete" 
+        p-kind="primary">
+      </po-button>
+
+      <po-button 
+        p-label="PO Button" 
+        (p-click)="onButtonClick()" 
+        p-icon="po-icon-delete" 
+        p-kind="secondary"
+        p-size="large">
+      </po-button>
+
+      <po-button 
+        p-label="PO Button" 
+        (p-click)="onButtonClick()" 
+        p-icon="po-icon-delete" 
+        p-kind="tertiary"
+        [p-loading]="true">
+      </po-button>
+    </div>
+  </po-page-dynamic-search>
+  <!-- <po-page-default p-title="AppName">
+    <p> AppName page </p>
+  </po-page-default> -->
+</div>
